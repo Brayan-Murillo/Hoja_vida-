@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hoja de Vida - Brayan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- ENCABEZADO -->
+
+        <header>
+
+            <img src="BRYTANNY.jpeg" alt="Foto" class="foto">
+
+            <h1>Brayan</h1>
+
+            <h2>Asesor de Ventas</h2>
+
+            <p>Cali, Colombia</p>
+
+        </header>
+
+
+        <!-- INFORMACIÓN PERSONAL -->
+
+        <section>
+
+            <h2> Información Personal</h2>
+
+            <p><strong>Nombre:</strong> Brayan</p>
+
+            <p><strong>Cargo:</strong> Asesor de Ventas</p>
+
+            <p><strong>Ciudad:</strong> Cali, Colombia</p>
+
+        </section>
+
+
+        <!-- PERFIL -->
+
+        <section>
+
+            <h2> Perfil Profesional</h2>
+
+            <p>
+                Soy una persona responsable, comprometida y proactiva.
+                Tengo experiencia en ventas, atención al cliente y trabajo
+                en equipo. Me interesa seguir aprendiendo y desarrollando
+                nuevas habilidades profesionales.
+            </p>
+
+        </section>
+
+
+        <!-- EXPERIENCIA -->
+
+        <section>
+
+            <h2> Experiencia Laboral</h2>
+
+            <div class="tarjeta">
+
+                <h3>Asesor de Ventas</h3>
+
+                <p><strong>Empresa:</strong> Bavaria</p>
+
+                <p><strong>Experiencia:</strong> 4 años</p>
+
+                <ul>
+
+                    <li>Atención a clientes.</li>
+
+                    <li>Venta de productos.</li>
+
+                    <li>Visita a puntos de venta.</li>
+
+                    <li>Organización de productos.</li>
+
+                    <li>Servicio al cliente.</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCACIÓN -->
+
+        <section>
+
+            <h2> Educación</h2>
+
+            <div class="tarjeta">
+
+                <h3>SENA</h3>
+
+                <p>
+                    Análisis y Desarrollo de Software (ADSO)
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- HABILIDADES -->
+
+        <section>
+
+            <h2> Habilidades</h2>
+
+            <p>Atención al cliente</p>
+
+            <div class="barra">
+
+                <div class="progreso uno">
+                    90%
+                </div>
+
+            </div>
+
+
+            <p>Trabajo en equipo</p>
+
+            <div class="barra">
+
+                <div class="progreso dos">
+                    85%
+                </div>
+
+            </div>
+
+
+            <p>Ventas</p>
+
+            <div class="barra">
+
+                <div class="progreso tres">
+                    90%
+                </div>
+
+            </div>
+
+
+            <p>Comunicación</p>
+
+            <div class="barra">
+
+                <div class="progreso cuatro">
+                    85%
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section>
+
+            <h2> Contacto</h2>
+
+            <p>
+                <strong>Teléfono:</strong>
+                315 222 1234
+            </p>
+
+            <p>
+                <strong>Correo:</strong>
+                brayan@gmail.com
+            </p>
+
+
+            <div class="botones">
+
+                <a href="mailto:brayan@email.com">
+                    Enviar correo
+                </a>
+
+                <a href="https://wa.me/573000000000">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTÓN JAVASCRIPT -->
+
+        <button onclick="mostrarMensaje()">
+             Mostrar mensaje
+        </button>
+
+        <p id="mensaje"></p>
+
+
+        <!-- PIE DE PÁGINA -->
+
+        <footer>
+
+            <p>
+                2026 - Hoja de Vida de Brayan
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+function mostrarMensaje() {
+
+    document.getElementById("mensaje").innerHTML =
+        "Gracias por visitar mi hoja de vida.";
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* ENCABEZADO */
+
+header {
+    text-align: center;
+    background-color: #222222;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+header h2 {
+    color: white;
+}
+
+.foto {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* SECCIONES */
+
+section {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+section h2 {
+    color: #222222;
+}
+
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #cccccc;
+}
+
+
+/* BARRAS */
+
+.barra {
+    width: 100%;
+    height: 25px;
+    background-color: #dddddd;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.progreso {
+    height: 25px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 25px;
+}
+
+.uno {
+    width: 90%;
+    background-color: #333333;
+}
+
+.dos {
+    width: 85%;
+    background-color: #444444;
+}
+
+.tres {
+    width: 90%;
+    background-color: #555555;
+}
+
+.cuatro {
+    width: 85%;
+    background-color: #666666;
+}
+
+
+/* BOTONES */
+
+.botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botones a {
+    display: inline-block;
+    background-color: #222222;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.botones a:hover {
+    background-color: #555555;
+}
+
+
+/* BOTÓN JAVASCRIPT */
+
+button {
+    display: block;
+    margin: 30px auto 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222222;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+#mensaje {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: #666666;
+}
